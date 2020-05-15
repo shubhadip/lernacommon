@@ -2,5 +2,7 @@
   "packages": [
     "src/*"
   ],
+  "npmClient": "npm",
+  "useWorkspaces": true,
   "version": "0.0.4"
 }
