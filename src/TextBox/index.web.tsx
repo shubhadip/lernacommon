@@ -22,7 +22,7 @@ interface Iprops {
 const TextWeb : React.FunctionComponent<Iprops> = (props) => {
     return (
         <View>
-            <Text>I am Web TextBox</Text>
+            <Text>I am Web</Text>
             <Image
                 style={styles.tinyLogo}
                 source={{
