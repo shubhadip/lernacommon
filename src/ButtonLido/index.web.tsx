@@ -1,15 +1,24 @@
 import * as React from 'react';
-import {View, Button} from 'react-native'
+import { View, Button } from 'react-native'
 
-const ButtomWeb = () => {
+interface Iprops {
+    text?: string
+    onClick?: () => void
+    customContainerClass?: object
+    custonButtonClass?: object
+};
+
+const ButtomWeb : React.FunctionComponent<Iprops> = (props) => {
 
     const handlePress = () => {
-            alert("I am Web")
+        props.onClick ? props.onClick() : null
     }
+
+    const buttonText = props.text || 'Button'
 
     return (
         <View>
-            <Button title={'ButtonWeb'} onPress={handlePress}/>
+            <Button title={buttonText} onPress={handlePress}/>
         </View>
     )
 }

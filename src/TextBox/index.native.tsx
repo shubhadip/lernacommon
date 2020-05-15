@@ -15,7 +15,12 @@ const styles = StyleSheet.create({
     },
   });
 
-const TextWeb = () => {
+
+interface Iprops {
+  text?: string
+};
+
+const TextWeb : React.FunctionComponent<Iprops> = (props) => {
     return (
         <View>
             <Text>I am Native TextBox</Text>

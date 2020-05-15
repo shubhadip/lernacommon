@@ -1,15 +1,22 @@
 import * as React from 'react';
 import {View, Button, Alert} from 'react-native'
 
-const ButtomNative = () => {
+interface Iprops {
+    text?: string
+    onClick?: () => void
+};
+
+const ButtomNative : React.FunctionComponent<Iprops> = (props) => {
 
     const handlePress = () => {
-        Alert.alert('I am Native')
+        props.onClick ? props.onClick() : null
     }
+
+    const buttonText = props.text || 'Button'
 
     return (
         <View>
-            <Button title={'ButtonNative'} onPress={handlePress}/>
+            <Button title={buttonText} onPress={handlePress}/>
         </View>
     )
 }

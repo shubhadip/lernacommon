@@ -1,4 +1,5 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
     "outDir": "./dist",
     "target": "es5",
@@ -15,10 +16,9 @@
     "typeRoots": [
       "./node_modules/@types",
       "./types"
-    ]                       ,
+    ],
     "types":[]
   },
-  "compileOnSave": true,
   "include": [
     "./src/**/*.tsx",
     "./src/**/*.ts"

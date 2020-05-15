@@ -15,10 +15,14 @@ const styles = StyleSheet.create({
     },
   });
 
-const TextWeb = () => {
+interface Iprops {
+  text?: string
+};
+
+const TextWeb : React.FunctionComponent<Iprops> = (props) => {
     return (
         <View>
-            <Text>I am Web TextBox</Text>
+            <Text>I am Web TextBox Component</Text>
             <Image
                 style={styles.tinyLogo}
                 source={{
