@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {View, Button, Text, Alert} from 'react-native'
+import {View, Button, Alert} from 'react-native'
 
 const ButtomNative = () => {
 

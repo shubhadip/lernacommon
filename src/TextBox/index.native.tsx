@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
 const TextWeb = () => {
     return (
         <View>
-            <Text>I am Native</Text>
+            <Text>I am Native Text</Text>
             <Image
                 style={styles.tinyLogo}
                 source={{
