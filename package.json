@@ -1,6 +1,6 @@
 {
   "name": "lidocommon",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "main": "./dist/index.js",
   "scripts": {
     "prod": "rimraf ./dist && tsc",
