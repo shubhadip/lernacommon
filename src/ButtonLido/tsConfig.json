@@ -1,0 +1,29 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+      "outDir": "./dist",
+      "target": "es5",
+      "lib": ["es6", "dom"],
+      "module": "commonjs",
+      "noImplicitAny": true,
+      "strictNullChecks": true,
+      "inlineSourceMap": false,
+      "removeComments": true,
+      "sourceMap": true,
+      "noEmit": false,
+      "jsx": "react",
+      "skipLibCheck": true,
+      "types":[]
+    },
+    "include": [
+      "./src/**/*.tsx",
+      "./src/**/*.ts"
+    ],
+    "exclude": [
+      "node_modules",
+      "./node_modules",
+      "./node_modules/*",
+      "./node_modules/@types",
+    ]
+  }
+  
