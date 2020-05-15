@@ -1,8 +1,10 @@
 {
   "name": "lidocommon",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "main": "./dist/index.js",
-  "workspaces":["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "develop": "rimraf ./dist && tsc && wml start",
     "dev": "tsc -w",
