@@ -20,18 +20,12 @@ interface Iprops {
   text?: string
 };
 
-const TextNative : React.FunctionComponent<Iprops> = (props) => {
+const CardWeb : React.FunctionComponent<Iprops> = (props) => {
     return (
         <View>
-            <Text>I am Native</Text>
-            <Image
-                style={styles.tinyLogo}
-                source={{
-                uri: 'https://reactnative.dev/img/tiny_logo.png',
-                }}
-            />
+            <Text>I am Card Web</Text>
         </View>
     )
 }
 
-export default TextNative;
+export default CardWeb;

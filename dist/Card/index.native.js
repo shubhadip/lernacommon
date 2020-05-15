@@ -16,12 +16,9 @@ var styles = react_native_1.StyleSheet.create({
     },
 });
 ;
-var TextNative = function (props) {
+var CardNative = function (props) {
     return (React.createElement(react_native_1.View, null,
-        React.createElement(react_native_1.Text, null, "I am Native"),
-        React.createElement(react_native_1.Image, { style: styles.tinyLogo, source: {
-                uri: 'https://reactnative.dev/img/tiny_logo.png',
-            } })));
+        React.createElement(react_native_1.Text, null, "I am Card Native")));
 };
-exports.default = TextNative;
+exports.default = CardNative;
 //# sourceMappingURL=index.native.js.map

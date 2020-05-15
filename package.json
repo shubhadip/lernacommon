@@ -8,9 +8,7 @@
   "scripts": {
     "develop": "rimraf ./dist && tsc && wml start",
     "dev": "tsc -w",
-    "diff": "lerna diff",
-    "new_version": "lerna version --conventional-commits --yes",
-    "publish": "npm run build && lerna publish",
+    "publish": "npm version patch && lerna publish",
     "build": "rimraf ./dist && tsc"
   },
   "keywords": [],
