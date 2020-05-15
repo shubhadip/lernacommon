@@ -1,0 +1,27 @@
+{
+  "name": "lidocommon",
+  "version": "1.0.20",
+  "main": "./dist/index",
+  "scripts": {
+    "prod": "rimraf ./dist && tsc",
+    "dev": "tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-native": "~0.61.4",
+    "react-native-web": "^0.11.7"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-native": "^0.61.4",
+    "lerna": "^3.20.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.2"
+  },
+  "description": ""
+}
