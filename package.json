@@ -4,13 +4,13 @@
   "main": "./dist/index.js",
   "workspaces":["src/*"],
   "scripts": {
-    "develop": "rimraf ./dist && tsc && wml start",
+    "develop": "npm run pre-build && wml start",
     "dev": "tsc -w",
     "diff": "lerna diff",
     "new_version": "lerna version --conventional-commits --yes",
-    "publish": "npm run build && lerna publish",
+    "publish": "npm run pre-build && lerna publish",
     "build": "rimraf ./dist && tsc",
-    "test": "lerna run build"
+    "pre-build": "lerna run build"
   },
   "keywords": [],
   "author": "",

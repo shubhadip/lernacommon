@@ -12,7 +12,7 @@ const ButtomNative : React.FunctionComponent<Iprops> = (props) => {
         props.onClick ? props.onClick() : null
     }
 
-    const buttonText = props.text || 'Button'
+    const buttonText = props.text || 'ButtonNative'
 
     return (
         <View>
