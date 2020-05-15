@@ -2,14 +2,15 @@
   "name": "lidocommon",
   "version": "1.0.25",
   "main": "./dist/index.js",
-  "workspaces":["packages/*"],
+  "workspaces":["src/*"],
   "scripts": {
     "develop": "rimraf ./dist && tsc && wml start",
     "dev": "tsc -w",
     "diff": "lerna diff",
     "new_version": "lerna version --conventional-commits --yes",
     "publish": "npm run build && lerna publish",
-    "build": "rimraf ./dist && tsc"
+    "build": "rimraf ./dist && tsc",
+    "test": "lerna run build"
   },
   "keywords": [],
   "author": "",
