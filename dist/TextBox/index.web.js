@@ -17,7 +17,7 @@ var styles = react_native_1.StyleSheet.create({
 });
 var TextWeb = function () {
     return (React.createElement(react_native_1.View, null,
-        React.createElement(react_native_1.Text, null, "I am eb Paragraph"),
+        React.createElement(react_native_1.Text, null, "I am Web TextBox"),
         React.createElement(react_native_1.Image, { style: styles.tinyLogo, source: {
                 uri: 'https://reactnative.dev/img/tiny_logo.png',
             } })));

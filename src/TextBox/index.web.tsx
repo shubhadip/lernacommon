@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
 const TextWeb = () => {
     return (
         <View>
-            <Text>I am Web</Text>
+            <Text>I am Web TextBox</Text>
             <Image
                 style={styles.tinyLogo}
                 source={{

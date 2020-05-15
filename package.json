@@ -4,7 +4,9 @@
   "main": "./dist/index.js",
   "scripts": {
     "prod": "rimraf ./dist && tsc",
-    "dev": "tsc -w"
+    "dev": "tsc -w",
+    "diff": "lerna diff",
+    "new_version":"lerna version --conventional-commits --yes"
   },
   "keywords": [],
   "author": "",
