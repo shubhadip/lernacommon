@@ -3,13 +3,13 @@
   "version": "1.0.28",
   "main": "./dist/index.js",
   "workspaces": [
-    "packages/*"
+    "src/*"
   ],
   "scripts": {
     "develop": "rimraf ./dist && tsc && wml start",
     "dev": "tsc -w",
     "publish": "npm version patch && lerna publish",
-    "build": "rimraf ./dist && tsc"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",

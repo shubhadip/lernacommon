@@ -1,0 +1,14 @@
+{
+    "name": "@lidocommon/TextBox",
+    "description": "TextBox component",
+    "version": "1.0.0",
+    "license": "MIT",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc"
+    },
+    "peerDependencies": {
+        "react": "^16.8.2",
+        "react-dom": "^16.8.2"
+    }
+}
