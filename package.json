@@ -8,7 +8,7 @@
   "scripts": {
     "develop": "rimraf ./dist && tsc && wml start",
     "dev": "tsc -w",
-    "publish": "npm version patch && npm publish",
+    "pre-publish": "npm version patch",
     "build": "rimraf ./dist && tsc",
     "storybook": "start-storybook -p 9009"
   },
