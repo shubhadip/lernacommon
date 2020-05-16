@@ -8,8 +8,9 @@
   "scripts": {
     "develop": "rimraf ./dist && tsc && wml start",
     "dev": "tsc -w",
-    "publish": "npm version patch && lerna publish",
-    "build": "rimraf ./dist && tsc"
+    "publish": "npm version patch && npm publish",
+    "build": "rimraf ./dist && tsc",
+    "storybook": "start-storybook -p 9009"
   },
   "keywords": [],
   "author": "",
@@ -18,15 +19,28 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-native": "~0.61.4",
+    "react-native-swipe-gestures": "^1.0.5",
     "react-native-web": "^0.11.7"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/react": "^5.3.18",
+    "@storybook/react-native": "^5.3.18",
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
     "@types/react-native": "^0.61.4",
+    "babel-loader": "^8.1.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
     "lerna": "^3.20.2",
+    "react-docgen-typescript-loader": "^3.7.2",
     "rimraf": "^3.0.2",
-    "typescript": "^3.9.2"
+    "ts-loader": "^7.0.4",
+    "typescript": "^3.9.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
   },
   "description": ""
 }

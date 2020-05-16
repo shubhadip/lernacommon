@@ -21,12 +21,13 @@
   },
   "include": [
     "./src/**/*.tsx",
-    "./src/**/*.ts"
+    "./src/**/*.ts",
   ],
   "exclude": [
     "node_modules",
     "./node_modules",
     "./node_modules/*",
     "./node_modules/@types",
+    "./.storybook"
   ]
 }
