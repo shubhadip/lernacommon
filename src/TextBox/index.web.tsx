@@ -17,18 +17,20 @@ const styles = StyleSheet.create({
 
 interface Iprops {
   text?: string
+  imageUri?: string
 };
 
 const TextWeb : React.FunctionComponent<Iprops> = (props) => {
+  const title = props.text || 'I am TextBox'
     return (
         <View>
-            <Text>I am Web TextBox</Text>
-            <Image
+            <Text>{title}</Text>
+            { props.imageUri ? <Image
                 style={styles.tinyLogo}
                 source={{
                 uri: 'https://reactnative.dev/img/tiny_logo.png',
                 }}
-            />
+            />: null }
         </View>
     )
 }

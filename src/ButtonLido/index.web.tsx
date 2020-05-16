@@ -1,26 +1,41 @@
 import * as React from 'react';
-import { View, Button } from 'react-native'
+import { View, Button, StyleSheet} from 'react-native'
+
+const styles = StyleSheet.create({
+  viewContainer: {
+    backgroundColor: '#fff',
+  }
+});
 
 interface Iprops {
     text?: string
     onClick?: () => void
     customContainerClass?: object
-    custonButtonClass?: object
+    buttonColor?: string
+    disabled?: boolean
 };
 
-const ButtomWeb : React.FunctionComponent<Iprops> = (props) => {
+const defaultProps: Iprops = {
+    customContainerClass: {},
+    buttonColor: 'blue',
+    disabled: false
+}
+
+const ButtonWeb : React.FunctionComponent<Iprops> = (props) => {
 
     const handlePress = () => {
         props.onClick ? props.onClick() : null
     }
 
-    const buttonText = props.text || 'Button'
+    const title = props.text || 'Button'
 
     return (
-        <View>
-            <Button title={buttonText} onPress={handlePress}/>
+        <View style={[styles.viewContainer, props.customContainerClass]}>
+            {props.children ? props.children : <Button title={title} onPress={handlePress} color={props.buttonColor} disabled={props.disabled}/>}
         </View>
     )
 }
 
-export default ButtomWeb;
+ButtonWeb.defaultProps = defaultProps;
+
+export default ButtonWeb;
