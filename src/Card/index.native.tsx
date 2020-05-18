@@ -1,31 +1,22 @@
 import * as React from 'react';
-import {View, Text, Image, StyleSheet} from 'react-native'
-
-const styles = StyleSheet.create({
-    container: {
-      paddingTop: 50,
-    },
-    tinyLogo: {
-      width: 50,
-      height: 50,
-    },
-    logo: {
-      width: 66,
-      height: 58,
-    },
-  });
-
+import {View, Text} from 'react-native'
 
 interface Iprops {
-  text?: string
+  text: string
 };
+
+const defaultProps = {
+  text: 'I am Native Card'
+}
 
 const CardNative : React.FunctionComponent<Iprops> = (props) => {
     return (
         <View>
-            <Text>I am Card Native</Text>
+            <Text>{props.text}</Text>
         </View>
     )
 }
+
+CardNative.defaultProps = defaultProps
 
 export default CardNative;

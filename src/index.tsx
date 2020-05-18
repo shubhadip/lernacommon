@@ -1,10 +1,12 @@
 // @ts-nocheck
-import TextBox from './TextBox/index';
-import ButtonLido from './ButtonLido/index';
+import LidoButton from './LidoButton/index';
+import LidoAppText from './LidoAppText/index';
 import Card from './Card/index';
+import LidoTextBox from './LidoTextBox/index'
 
 export {
-    ButtonLido,
-    TextBox,
-    Card
+    LidoAppText,
+    Card,
+    LidoButton,
+    LidoTextBox
 }

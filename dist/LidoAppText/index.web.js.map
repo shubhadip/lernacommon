@@ -1,0 +1,1 @@
+{"version":3,"file":"index.web.js","sourceRoot":"","sources":["../../src/LidoAppText/index.web.tsx"],"names":[],"mappings":";;;;;;;;;;;;;AAAA,6BAA+B;AAC/B,6CAAoC;AAEpC,6CAAmC;AAMnC,IAAM,OAAO,GAAqB,UAAC,KAAK;IACtC,OAAO,CACL,oBAAC,mBAAI,eACC,KAAK,IACT,KAAK,EAAE;YACL,qBAAM,CAAC,IAAI;YACX,KAAK,CAAC,KAAK;SACZ,KAEA,KAAK,CAAC,QAAQ,CACV,CACR,CAAC;AACJ,CAAC,CAAA;AAED,kBAAe,OAAO,CAAC"}
