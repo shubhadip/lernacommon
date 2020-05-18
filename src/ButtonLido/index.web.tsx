@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Button, StyleSheet} from 'react-native'
+import { View, Button, Text, StyleSheet} from 'react-native'
 
 const styles = StyleSheet.create({
   viewContainer: {
