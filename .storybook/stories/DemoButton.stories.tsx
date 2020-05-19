@@ -5,7 +5,7 @@ import LidoButton from '../../src/ButtonLido/index.web'
 import { View, Text, StyleSheet} from 'react-native';
 
 export default {
-  title: 'Button',
+  title: 'Demo Button',
   component: LidoButton,
   decorators: [withKnobs]
 };
