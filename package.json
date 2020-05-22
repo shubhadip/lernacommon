@@ -16,13 +16,12 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "./src/*.{ts,tsx}": [
-      "prettier --write",
-      "eslint  . --ext .tsx --fix"
+    "./src/**/*.tsx": [
+      "npm run lint"
     ]
   },
   "keywords": [],
