@@ -1,5 +1,9 @@
 import * as React from 'react';
-import { View, TouchableOpacity,Button, ActivityIndicator } from 'react-native';
+import {
+  View,
+  TouchableOpacity,
+  ActivityIndicator
+} from 'react-native';
 
 import AppText from '../LidoAppText/index.native';
 
