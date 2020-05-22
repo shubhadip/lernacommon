@@ -1,24 +1,24 @@
 import * as React from 'react';
 import { View, TextInput } from 'react-native';
-import AppText from './../LidoAppText/index.native';
+import AppText from '../LidoAppText/index.native';
 import styles from './index.style';
 
-interface IProps {
-  style?: object
-  label?: string
-  labelText?: string
-  maxLength?: number
-  placeholder?: string
-  inputStyle?: object
-  keyboardType: any
-  onChangeText: () => void
-  onFocus: () => void
-  onBlur: () => void
-  editable?: boolean
-  labelStyle?: object
+interface LidoAppTextProps {
+  style?: object;
+  label?: string;
+  labelText?: string;
+  maxLength?: number;
+  placeholder?: string;
+  inputStyle?: object;
+  keyboardType: any;
+  onChangeText: () => void;
+  onFocus: () => void;
+  onBlur: () => void;
+  editable?: boolean;
+  labelStyle?: object;
 }
 export type Ref = TextInput;
-const TextBox = React.forwardRef<Ref, IProps>((props, ref) => {
+const TextBox = React.forwardRef<Ref, LidoAppTextProps>((props, ref) => {
   const {
     style,
     label,
@@ -36,14 +36,8 @@ const TextBox = React.forwardRef<Ref, IProps>((props, ref) => {
   } = props;
 
   return (
-    <View
-      style={[styles.textBox, style]}
-    >
-      {
-        label ? (
-          <AppText style={labelStyle}>{labelText}</AppText>
-        ) : null
-      }
+    <View style={[styles.textBox, style]}>
+      {label ? <AppText style={labelStyle}>{labelText}</AppText> : null}
       <TextInput
         maxLength={maxLength}
         placeholder={placeholder}

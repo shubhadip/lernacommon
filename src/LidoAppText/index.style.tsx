@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     padding: 20,
     margin: 20
-  },
+  }
 });
 
 export default styles;

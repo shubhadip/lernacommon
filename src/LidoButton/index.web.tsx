@@ -1,46 +1,39 @@
 import * as React from 'react';
-import {
-  View,
-  TouchableOpacity,
-  ActivityIndicator
-} from 'react-native';
+import { View, TouchableOpacity, ActivityIndicator } from 'react-native';
 
-import AppText from './../LidoAppText/index.native';
+import AppText from '../LidoAppText/index.native';
 
 import styles from './index.style';
 
-interface IProps {
-    onPress: () => void
-    loading?: boolean
-    loadingProps?: {
-        size?: number | "small" | "large" | undefined
-        color?: string
-    }
-    disabled?: boolean
-    clickedStyle?: object
-    style?: object
-    styleText?: object
-    title?: string
-    subTitle?: string
-    subTitleStyle?: object
-    superScriptStyle?: object
-    superScript?: React.ReactNode
+interface LidoButtonProps {
+  onPress: () => void;
+  loading?: boolean;
+  loadingProps?: {
+    size?: number | 'small' | 'large' | undefined;
+    color?: string;
+  };
+  disabled?: boolean;
+  clickedStyle?: object;
+  style?: object;
+  styleText?: object;
+  title?: string;
+  subTitle?: string;
+  subTitleStyle?: object;
+  superScriptStyle?: object;
+  superScript?: React.ReactNode;
 }
 
-const LidoButton: React.FC<IProps>= (props) => {
+const LidoButton: React.FC<LidoButtonProps> = (props) => {
   const [clicked, setClicked] = React.useState({});
   const {
     onPress,
     loading = false,
-    loadingProps: {
-      size = 'small',
-      color = '#fff'
-    } = {},
+    loadingProps: { size = 'small', color = '#fff' } = {},
     disabled = false,
     clickedStyle = {}
   } = props;
 
-  function _onPress() {
+  function handlePress() {
     if (!disabled) {
       onPress();
     }
@@ -48,47 +41,40 @@ const LidoButton: React.FC<IProps>= (props) => {
 
   return (
     <TouchableOpacity
-      onPress={_onPress}
-      style={[
-        styles.button,
-        props.style,
-        clicked
-      ]}
+      onPress={handlePress}
+      style={[styles.button, props.style, clicked]}
       activeOpacity={1}
       onPressOut={() => setClicked({})}
       onPressIn={() => setClicked(clickedStyle)}
     >
       <View>
-        {
-          loading ? (
-            <ActivityIndicator size={size} color={color} />
-          ) : (
-              <>
-                <View style={{flexDirection: "row"}}>
-                  <AppText
-                    style={{
-                      ...styles.buttonText,
-                      ...props.styleText
-                    }}
-                  >
-                    {props.title}
-                  </AppText>
-                  <AppText style={props.superScriptStyle}>{props.superScript}</AppText>
-                </View>
-                {
-                  props.subTitle ? (
-                    <AppText style={props.subTitleStyle}>
-                      {props.subTitle}
-                    </AppText>
-                  ) : <></>
-                }
-              </>
-            )
-        }
+        {loading ? (
+          <ActivityIndicator size={size} color={color} />
+        ) : (
+          <>
+            <View style={{ flexDirection: 'row' }}>
+              <AppText
+                style={{
+                  ...styles.buttonText,
+                  ...props.styleText
+                }}
+              >
+                {props.title}
+              </AppText>
+              <AppText style={props.superScriptStyle}>
+                {props.superScript}
+              </AppText>
+            </View>
+            {props.subTitle ? (
+              <AppText style={props.subTitleStyle}>{props.subTitle}</AppText>
+            ) : (
+              <></>
+            )}
+          </>
+        )}
       </View>
     </TouchableOpacity>
   );
-}
-
+};
 
 export default LidoButton;
