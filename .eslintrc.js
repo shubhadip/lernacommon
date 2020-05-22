@@ -28,6 +28,7 @@ module.exports = {
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "object-curly-newline": 0,
+    "no-unused-vars": 0,
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
     "camelcase": 0,

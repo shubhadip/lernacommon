@@ -20,6 +20,9 @@
       "pre-commit": "npm run lint"
     }
   },
+  "lint-staged":{
+    "*.tsx": ["npm run lint:fix", "npm run prettify"]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
