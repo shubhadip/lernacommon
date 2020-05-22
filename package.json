@@ -20,7 +20,10 @@
     }
   },
   "lint-staged": {
-    "*.tsx": ["npm run lint"]
+    "./src/*.{ts,tsx}": [
+      "prettier --write",
+      "eslint  . --ext .tsx --fix"
+    ]
   },
   "keywords": [],
   "author": "",
