@@ -1,8 +1,8 @@
 import * as React from 'react';
 import {
   View,
-  TouchableOpacity,
   Button,
+  TouchableOpacity,
   ActivityIndicator
 } from 'react-native';
 
