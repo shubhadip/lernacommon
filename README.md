@@ -11,7 +11,7 @@ Common Components ReactNative and ReactNativeWeb
 \
 \
 **To Build Library:**\
-- Run `yarn webdev` in root folder.
+- Run `npm run build` in root folder.
 
 **To Develop Components:**\
 Please follow below mentioned step to run this project:
@@ -20,7 +20,7 @@ Please follow below mentioned step to run this project:
 ```shell##
 git clone git@github.com:shubhadip/lidocommon.git
 ```
-- run **yarn** in root folder
+- run **npm install** in root folder
 
 #### To develop
 - Run `npm run dev` in root folder.
