@@ -9,7 +9,7 @@ var styles = react_native_1.StyleSheet.create({
 });
 var defaultProps = {
     customContainerClass: {},
-    buttonColor: 'blue',
+    buttonColor: 'black',
     disabled: false
 };
 var ButtonNative = function (props) {

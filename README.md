@@ -6,7 +6,6 @@ Common Components ReactNative and ReactNativeWeb
 [React](https://reactjs.org/)\
 [React Native](https://facebook.github.io/react-native/)\
 [React Native Web](https://github.com/necolas/react-native-web)\
-[Lerna](https://github.com/lerna/lerna)\
 [Typescript](https://github.com/microsoft/TypeScript)\
 \
 \
