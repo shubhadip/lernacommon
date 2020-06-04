@@ -25,6 +25,9 @@ git clone git@github.com:shubhadip/lidocommon.git
 #### To develop
 - Run `npm run dev` in root folder.
 
+#### To develop using webpack(for react-native-web)
+- Run `npm run web` in root folder.
+
 #### For StoryBook Development
 - Run `npm run storybook` in root folder.
 
