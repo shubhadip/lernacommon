@@ -27,7 +27,8 @@
       "npm run prettify"
     ]
   },
-  "keywords": [],
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "keywords": ["react-native","react-native-web"],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -69,5 +70,10 @@
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"
   },
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shubhadip/lidocommon.git"
+  },
+  "homepage": "https://github.com/shubhadip/lidocommon#readme"
 }
