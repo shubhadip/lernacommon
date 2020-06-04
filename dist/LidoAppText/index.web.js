@@ -14,11 +14,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
 var react_native_1 = require("react-native");
 var index_style_1 = require("./index.style");
-var AppText = function (props) {
-    return (React.createElement(react_native_1.Text, __assign({}, props, { style: [
-            index_style_1.default.text,
-            props.style
-        ] }), props.children));
-};
+var AppText = function (props) { return (React.createElement(react_native_1.Text, __assign({}, props, { style: [index_style_1.default.text, props.style] }), props.children)); };
 exports.default = AppText;
 //# sourceMappingURL=index.web.js.map

@@ -13,7 +13,7 @@ var __assign = (this && this.__assign) || function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
 var react_native_1 = require("react-native");
-var index_native_1 = require("./../LidoAppText/index.native");
+var index_native_1 = require("../LidoAppText/index.native");
 var index_style_1 = require("./index.style");
 var LidoButton = function (props) {
     var _a = React.useState({}), clicked = _a[0], setClicked = _a[1];
@@ -23,16 +23,12 @@ var LidoButton = function (props) {
             onPress();
         }
     }
-    return (React.createElement(react_native_1.TouchableOpacity, { onPress: _onPress, style: [
-            index_style_1.default.button,
-            props.style,
-            clicked
-        ], activeOpacity: 1, onPressOut: function () { return setClicked({}); }, onPressIn: function () { return setClicked(clickedStyle); } },
+    return (React.createElement(react_native_1.TouchableOpacity, { onPress: _onPress, style: [index_style_1.default.button, props.style, clicked], activeOpacity: 1, onPressOut: function () { return setClicked({}); }, onPressIn: function () { return setClicked(clickedStyle); } },
         React.createElement(react_native_1.View, null, loading ? (React.createElement(react_native_1.ActivityIndicator, { size: size, color: color })) : (React.createElement(React.Fragment, null,
-            React.createElement(react_native_1.View, { style: { flexDirection: "row" } },
+            React.createElement(react_native_1.View, { style: { flexDirection: 'row' } },
                 React.createElement(index_native_1.default, { style: __assign(__assign({}, index_style_1.default.buttonText), props.styleText) }, props.title),
                 React.createElement(index_native_1.default, { style: props.superScriptStyle }, props.superScript)),
-            props.subTitle ? (React.createElement(index_native_1.default, { style: props.subTitleStyle }, props.subTitle)) : React.createElement(React.Fragment, null))))));
+            props.subTitle ? (React.createElement(index_native_1.default, { style: props.subTitleStyle }, props.subTitle)) : (React.createElement(React.Fragment, null)))))));
 };
 exports.default = LidoButton;
 //# sourceMappingURL=index.native.js.map

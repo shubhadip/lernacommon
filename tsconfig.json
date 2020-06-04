@@ -28,6 +28,7 @@
     "./node_modules",
     "./node_modules/*",
     "./node_modules/@types",
-    "./.storybook"
+    "./.storybook",
+    "./src/develop-web"
   ]
 }

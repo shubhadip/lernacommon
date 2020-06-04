@@ -24,12 +24,12 @@ var __rest = (this && this.__rest) || function (s, e) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
 var react_native_1 = require("react-native");
-var index_native_1 = require("./../LidoAppText/index.native");
+var index_native_1 = require("../LidoAppText/index.native");
 var index_style_1 = require("./index.style");
 var TextBox = React.forwardRef(function (props, ref) {
     var style = props.style, label = props.label, labelText = props.labelText, maxLength = props.maxLength, placeholder = props.placeholder, inputStyle = props.inputStyle, keyboardType = props.keyboardType, onChangeText = props.onChangeText, onFocus = props.onFocus, onBlur = props.onBlur, _a = props.editable, editable = _a === void 0 ? true : _a, _b = props.labelStyle, labelStyle = _b === void 0 ? {} : _b, restProps = __rest(props, ["style", "label", "labelText", "maxLength", "placeholder", "inputStyle", "keyboardType", "onChangeText", "onFocus", "onBlur", "editable", "labelStyle"]);
     return (React.createElement(react_native_1.View, { style: [index_style_1.default.textBox, style] },
-        label ? (React.createElement(index_native_1.default, { style: labelStyle }, labelText)) : null,
+        label ? React.createElement(index_native_1.default, { style: labelStyle }, labelText) : null,
         React.createElement(react_native_1.TextInput, __assign({ maxLength: maxLength, placeholder: placeholder, style: [index_style_1.default.input, inputStyle], keyboardType: keyboardType, onChangeText: onChangeText, onFocus: onFocus, onBlur: onBlur, ref: ref, editable: editable }, restProps))));
 });
 exports.default = TextBox;
