@@ -7,7 +7,6 @@ const styles = StyleSheet.create({
   text: { fontWeight: 'bold' }
 });
 
-
 class App extends React.Component {
   render() {
     return (
