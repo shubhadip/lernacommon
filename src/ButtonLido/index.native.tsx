@@ -17,7 +17,7 @@ interface ButtonLidoprops {
 
 const defaultProps: ButtonLidoprops = {
   customContainerClass: {},
-  buttonColor: 'blue',
+  buttonColor: 'black',
   disabled: false
 };
 
