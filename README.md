@@ -42,4 +42,4 @@ git clone git@github.com:shubhadip/lidocommon.git
 > now you will get updated code everytime you change something in library code.
 
 ## To Import Library
-- `import { YourComponent } from 'monoreactrepo'`
+- `import { YourComponent } from 'lidocommon'`
