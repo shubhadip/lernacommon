@@ -1,52 +1,73 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin");
 const path = require('path');
 
-module.exports = {
-    mode: 'development',
-    entry: './src/develop-web/index.tsx',
-    output:{
-        filename: '[name].js',
-        path: path.resolve(__dirname, 'build'),
-        publicPath:  '/',
+module.exports =  {
+    entry: {
+      ButtonLido: './src/ButtonLido',
+      Card: './src/Card',
+      LidoAppText: './src/LidoAppText',
+      LidoButton: './src/LidoButton',
+      LidoLinkText: './src/LidoLinkText',
+      LidoMathText: './src/LidoMathText',
+      LidoTextBox: './src/LidoTextBox',
+      index: './src/index'
     },
-  module: {
-    rules: [
-      {
-        test: /\.(tsx|ts|jsx|js|mjs)$/,
-        exclude: /node_modules\/(?!()\/).*/,
-        use: {
-          loader: "ts-loader",
-        },
+    output: {
+      // ./[name]/
+        path: path.join(__dirname, '/dist'),
+        filename: './[name]/index.js',
+        libraryTarget: 'commonjs2'
       },
-      {
-        test: /\.html$/,
-        use: [
+      module: {
+        rules: [
           {
-            loader: "html-loader",
-          },
-        ],
+            test: /\.tsx?$/,
+            loader: 'ts-loader',
+            exclude: /node_modules/,
+          },{
+            test: /\.(sa|sc|c)ss$/,
+            use: [
+              'css-loader',
+              'sass-loader',
+            ],
+        }
+        ]
       },
-    ],
-  },
-  plugins: [
-    new HtmlWebPackPlugin({
-      template: "./public/index.html",
-      filename: "./index.html",
-    }),
-  ],
-  resolve: {
-    alias: {
-      "react-native$": "react-native-web"
-    },
-    extensions: [
-        '.web.tsx',
-        '.web.ts',
-        '.tsx',
-        '.ts',
-        '.web.jsx',
-        '.web.js',
-        '.jsx',
-        '.js',
-      ],
-  }
-};
+      resolve: {
+        alias: {
+            "react-native$": "react-native-web"
+          },
+        extensions: [".ts", ".js", ".tsx"]
+      }
+}
+
+// var path = require('path');
+// var commonConfig = {
+//     module: {
+//         rules: [
+//             {
+//                 test: /\.(ts|tsx)$/,
+//                 include: path.resolve(__dirname, 'src'),
+//                 exclude: /(node_modules|bower_components|build)/,
+//                 use: {
+//                     loader: 'ts-loader'
+//                 }
+//             }
+//         ]
+//     },
+//     mode: 'production'
+// }
+
+// var components = ['TextReact', 'TextReact2']
+
+// module.exports = components.map((componentName) => {
+//   const opPath = __dirname+ '/dist'
+//     return Object.assign({}, commonConfig, {
+//         name: componentName,
+//         entry: './src/' + componentName + '.tsx',
+//         output: {
+//             path: path.resolve(opPath, componentName),
+//             filename: 'index.js',
+//             libraryTarget: 'commonjs2'
+//         }
+//     });
+// })
