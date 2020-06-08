@@ -13,11 +13,7 @@
     "noEmit": false,
     "jsx": "react",
     "skipLibCheck": true,
-    "typeRoots": [
-      "./node_modules/@types",
-      "./types"
-    ],
-    "types":[]
+    "typeRoots": [ "./types", "./node_modules/@types"]
   },
   "include": [
     "./src/**/*.tsx",

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import MathText from 'react-native-math';
 
-const MathText = () => (
+const MathTextApp = () => (
   <MathText
     value={
       'Dissolve this $x=\\frac{1+y}{1+2z^2}$ using lorem ipsum dolor sit amet'
@@ -12,4 +12,4 @@ const MathText = () => (
   />
 );
 
-export default MathText;
+export default MathTextApp;
